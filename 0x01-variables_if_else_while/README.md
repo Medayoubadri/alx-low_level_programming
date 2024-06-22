@@ -74,5 +74,4 @@ This project covers the basics of variables, conditional statements, and loops i
 
 ---
 
-This README.md file provides an overview and brief descriptions of each task in the project. If you have any questions or need further assistance, feel free to reach out.
-
+This README.md file provides an overview and brief descriptions of each task in the project.
