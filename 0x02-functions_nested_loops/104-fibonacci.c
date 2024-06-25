@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-
 	unsigned long fib1 = 1, fib2 = 2;
 	unsigned long fib1_high, fib1_low, fib2_high, fib2_low;
 	unsigned long high, low;
@@ -17,7 +16,6 @@ int main(void)
 
 	for (count = 2; count < 92; count++)
 	{
-		
 		unsigned long next = fib1 + fib2;
 		printf(", %lu", next);
 		fib1 = fib2;
@@ -28,10 +26,8 @@ int main(void)
 	fib1_low = fib1 % 10000000000;
 	fib2_high = fib2 / 10000000000;
 	fib2_low = fib2 % 10000000000;
-
 	for (count = 92; count < 98; count++)
 	{
-
 		high = fib1_high + fib2_high;
 		low = fib1_low + fib2_low;
 		if (fib1_low + fib2_low > 9999999999)
