@@ -1,54 +1,39 @@
 #include <stdio.h>
-
 #define LARGEST 10000000000
-
 /**
-* main - prints the first 98 Fibonacci numbers, starting with 1 and 2
-*
-* Return: Always 0 (Success)
-*/
+ * main - main block
+ * Description: Find and print the first 98 fib numbers starting with 1 and 2.
+ * 
+ * Return: 0
+ **/
 int main(void)
 {
-unsigned long fib1 = 1, fib2 = 2;
+	unsigned long int lukeFront = 0, lukeBack = 1, leiaFront = 0, leiaBack = 2;
+	unsigned long int yodaTemp1, yodaTemp2, yodaTemp3;
+	int jediCount;
 
-unsigned long fib1_high, fib1_low, fib2_high, fib2_low;
-
-unsigned long high, low;
-
-int count;
-
-printf("%lu, %lu", fib1, fib2);
-
-for (count = 2; count < 92; count++)
-{
-	unsigned long next = fib1 + fib2;
-
-	printf(", %lu", next);
-	fib1 = fib2;
-	fib2 = next;
-}
-
-fib1_high = fib1 / LARGEST;
-fib1_low = fib1 % LARGEST;
-fib2_high = fib2 / LARGEST;
-fib2_low = fib2 % LARGEST;
-
-for (count = 92; count < 98; count++)
-{
-	high = fib1_high + fib2_high;
-	low = fib1_low + fib2_low;
-
-	if (fib1_low + fib2_low >= LARGEST)
+	printf("%lu, %lu, ", lukeBack, leiaBack);
+	for (jediCount = 2; jediCount < 98; jediCount++)
 	{
-		high += 1;
-		low -= LARGEST;
+		if (lukeBack + leiaBack > LARGEST || leiaFront > 0 || lukeFront > 0)
+		{
+			yodaTemp1 = (lukeBack + leiaBack) / LARGEST;
+			yodaTemp2 = (lukeBack + leiaBack) % LARGEST;
+			yodaTemp3 = lukeFront + leiaFront + yodaTemp1;
+			lukeFront = leiaFront, leiaFront = yodaTemp3;
+			lukeBack = leiaBack, leiaBack = yodaTemp2;
+			printf("%lu%010lu", leiaFront, leiaBack);
+		}
+		else
+		{
+			yodaTemp2 = lukeBack + leiaBack;
+			lukeBack = leiaBack, leiaBack = yodaTemp2;
+			printf("%lu", leiaBack);
+		}
+		if (jediCount != 97)
+			printf(", ");
 	}
-	printf(", %lu%010lu", high, low);
-	fib1_high = fib2_high;
-	fib1_low = fib2_low;
-	fib2_high = high;
-	fib2_low = low;
+	printf("\n");
+	return (0);
 }
-printf("\n");
-return (0);
-}
+
