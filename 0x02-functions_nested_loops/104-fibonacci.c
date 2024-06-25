@@ -1,11 +1,10 @@
 #include <stdio.h>
 #define LARGEST 10000000000
 /**
- * main - main block
- * Description: Find and print the first 98 fib numbers starting with 1 and 2.
- * 
- * Return: 0
- **/
+ * main - prints the first 98 Fibonacci numbers, starting with 1 and 2
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	unsigned long int lukeFront = 0, lukeBack = 1, leiaFront = 0, leiaBack = 2;
