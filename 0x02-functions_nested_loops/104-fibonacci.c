@@ -17,6 +17,7 @@ int main(void)
 
 	for (count = 2; count < 92; count++)
 	{
+		
 		unsigned long next = fib1 + fib2;
 		printf(", %lu", next);
 		fib1 = fib2;
@@ -30,6 +31,7 @@ int main(void)
 
 	for (count = 92; count < 98; count++)
 	{
+
 		high = fib1_high + fib2_high;
 		low = fib1_low + fib2_low;
 		if (fib1_low + fib2_low > 9999999999)
