@@ -5,8 +5,8 @@
  * @str: pointer to the string to be encoded
  *
  * Description: This function encodes a string using rot13, a simple
- *              substitution cipher that replaces a letter with 
- *              the letter 13 letters after it in the alphabet.
+ *              substitution cipher that replaces a letter
+ *              with the letter 13 letters after it in the alphabet.
  * Return: pointer to the encoded string
  */
 char *rot13(char *str)
@@ -26,7 +26,5 @@ char *rot13(char *str)
 			}
 		}
 	}
-
 	return (str);
 }
-
