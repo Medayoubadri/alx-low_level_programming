@@ -5,7 +5,7 @@
  * @s: double pointer to be set
  * @to: char pointer to set
  *
- * Description: This function sets the value of a double pointer to a char pointer.
+ * Description: This function sets the value of a double pointer to a char.
  * Return: void
  */
 void set_string(char **s, char *to)
