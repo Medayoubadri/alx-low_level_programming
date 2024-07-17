@@ -9,7 +9,6 @@
 int count_words(char *str)
 {
 	int i, count = 0;
-
 	for (i = 0; str[i]; i++)
 	{
 		if (str[i] == ' ')
@@ -24,7 +23,8 @@ int count_words(char *str)
  * strtow - splits a string into words because why not
  * @str: string to split
  *
- * Return: pointer to an array of strings (words), or NULL if it fails miserably
+ * Return: pointer to an array of strings (words)
+ *         or NULL if it fails miserably
  */
 char **strtow(char *str)
 {
@@ -59,7 +59,7 @@ char **strtow(char *str)
 		for (j = 0; j < len; j++)
 			words[i][j] = str[k + j];
 		words[i][j] = '\0';
-		k += len +1;
+		k += len + 1;
 	}
 	words[i] = NULL;
 
