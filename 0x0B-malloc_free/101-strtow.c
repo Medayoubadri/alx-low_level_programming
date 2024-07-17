@@ -58,7 +58,7 @@ char **strtow(char *str)
 		}
 		for (j = 0; j < len; j++)
 			words[i][j] = str[k + j];
-		words[i][i] = '\0';
+		words[i] = '\0';
 		k += len;
 	}
 	words[i] = NULL;
