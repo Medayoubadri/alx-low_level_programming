@@ -6,7 +6,7 @@
  * @min: the minimum integer value in the array, bcz every story needs a start
  * @max: the maximum integer value in the array, bcz every story needs an end?
  *
- * Return: pointer to the newly created array, or NULL if it fails spectacularly
+ * Return: pointer to the newly created array, or NADA if it fails
  */
 int *array_range(int min, int max)
 {
