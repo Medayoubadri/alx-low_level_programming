@@ -51,4 +51,4 @@ Write a program that multiplies two positive numbers.
 
 ---
 
-hey, did you know that octopuses have three hearts? and sharks have two penises! Just something to ponder while your code compiles.
+hey, did you know that octopuses 🐙 have three ❤️ ? and sharks 🦈 have TWO penises 🍆! Just something to ponder while your code compiles.
