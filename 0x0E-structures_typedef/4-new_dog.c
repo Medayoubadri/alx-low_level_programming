@@ -9,7 +9,8 @@
  * @owner: The dog of the owner.
  *
  * Return: A pointer to the new dog_t, or NULL if it fails.
- * Description: This function creates a new dog and stores copies of the name and owner.
+ * Description: This function creates a new dog and stores
+ *              copies of the name and owner.
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
