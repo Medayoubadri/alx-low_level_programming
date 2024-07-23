@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * thedawg - Creates a new dag.
+ * new_dog - Creates a new dag.
  * @name: The name of the dowg.
  * @age: The age of the dawg.
  * @owner: The dog of the owner.
