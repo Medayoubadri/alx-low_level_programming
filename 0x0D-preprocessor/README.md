@@ -4,13 +4,13 @@
 This project dives into the magical world of C preprocessors, focusing on macros. You'll learn how to create and use different types of macros, which can save you a lot of time and make your code more readable.
 
 ## Table of Contents
-- Requirements
-- Tasks
-  - Task 0: Object-like Macros FTW
-  - Task 1: Mmm Pi
-  - Task 2: File Name Fanatic
-  - Task 3: Big Bad Function-like Macro
-  - Task 4: Summing It Up
+- [Requirements](#requirements) 
+- [Tasks](#tasks)
+  - [Task 0: Object-like Macros FTW](#task-0-Object-like-Macros-FTW) 
+  - [Task 1: Mmm Pi](#task-1-Mmm-Pi)
+  - [Task 2: File Name Fanatic](#task-2-File-Name-Fantastic)
+  - [Task 3: Big Bad Function-like Macro](#task-3-Big-Bad-Function-like-Macro)
+  - [Task 4: Summing It Up](#task-4-Summing-It-Up)
 
 ## Requirements
 - Allowed editors: vi, vim, emacs
