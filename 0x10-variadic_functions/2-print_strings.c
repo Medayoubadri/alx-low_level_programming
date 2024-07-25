@@ -8,7 +8,9 @@
  * @n: The number of strings passed to the function.
  *
  * Description: This function uses variadic arguments to print strings
- *              separated by string.
+ *              separated by string. If a string is NULL, it prints (nil)
+ *              or as we like to say,"this string is in D nil"
+ *              (get it, the Nile?).
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -21,7 +23,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		str = va_arg(args, char *);
-		if (str == NULL)  /* This string is in D nil */
+		if (str == NULL) /* this one */
 			printf("(nil)");
 		else
 			printf("%s", str);
