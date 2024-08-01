@@ -20,6 +20,7 @@ typedef struct list_s
 
 /* Function prototype for printing the list */
 size_t print_list(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
 
 #endif /* LISTS_H */
 
