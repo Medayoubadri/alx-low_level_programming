@@ -8,8 +8,8 @@
  *
  * Return: 1 if it succeeded, -1 if it failed.
  *
- * Description: The first rule of deleting a node is: you do not talk 
- * about deleting the node. The second rule is: you DO NOT talk about 
+ * Description: The first rule of deleting a node is: you do not talk
+ * about deleting the node. The second rule is: you DO NOT talk about
  * deleting the node. We just quietly remove it and move on.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
