@@ -8,7 +8,7 @@
  *
  * Return: The head node's data (n), or 0 if the list is empty.
  *
- * Description: Accio data! Summon the head node’s value, 
+ * Description: Accio data! Summon the head node’s value,
  * then let the list carry on its magical journey.
  */
 int pop_listint(listint_t **head)
