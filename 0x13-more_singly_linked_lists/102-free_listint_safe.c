@@ -7,8 +7,8 @@
  *
  * Return: The size of the list that was freed.
  *
- * Description: Erasing all evidence. Carefully traverse the list, 
- * free each node, and make sure nothing is left behind. 
+ * Description: Erasing all evidence. Carefully traverse the list,
+ * free each node, and make sure nothing is left behind.
  * After this, it'll be like the list never existed.
  */
 size_t free_listint_safe(listint_t **h)
