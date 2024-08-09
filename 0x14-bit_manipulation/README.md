@@ -6,16 +6,16 @@ Welcome to the dark arts of bit manipulation, where we wield the power of binary
 
 ## Table of Contents
 
-- Requirements
-- Tasks
-  - Task 0: Binary to Unsigned Int
-  - Task 1: Print Binary
-  - Task 2: Get Bit
-  - Task 3: Set Bit
-  - Task 4: Clear Bit
-  - Task 5: Flip Bits
-  - Task 6: Check Endianness
-  - Task 7: Find the Password
+- [Requirements](#requirements)
+- [Tasks](#tasks)
+  - [Task 0: Binary to Unsigned Int](task-0-binary-to-unsigned-int)
+  - [Task 1: Print Binary](task-1-print-binary)
+  - [Task 2: Get Bit](task-2-get-bit)
+  - [Task 3: Set Bit](task-3-set-bit)
+  - [Task 4: Clear Bit](task-4-clear-bit)
+  - [Task 5: Flip Bits](task-5-flip-bits)
+  - [Task 6: Check Endianness](task-6-check-endianness)
+  - [Task 7: Find the Password](task-7-find-the-password)
 
 ## Requirements
 
