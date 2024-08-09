@@ -7,8 +7,8 @@
  *
  * Return: 1 if it worked, or -1 if an error occurred.
  *
- * Description: Flipped this bit to zero, unlike your attention span which is
- *              perpetually on ‘off’. At least one of us is doing their job.
+ * Description: Flipped this bit to zero, unlike your attention span
+ *              which is perpetually on ‘off’.
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
