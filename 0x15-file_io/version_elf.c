@@ -8,17 +8,15 @@
  */
 void print_version(unsigned char *e_ident)
 {
-	printf("  Version:                           %d",
-	       e_ident[EI_VERSION]);
+	printf("  Version:                           %d", e_ident[EI_VERSION]);
 
-	switch (e_ident[EI_VERSION])
+	if (e_ident[EI_VERSION] == EV_CURRENT || e_ident[EI_VERSION] == 1)
 	{
-	case EV_CURRENT:
 		printf(" (current)\n");
-		break;
-	default:
+	}
+	else
+	{
 		printf("\n");
-		break;
 	}
 }
 
