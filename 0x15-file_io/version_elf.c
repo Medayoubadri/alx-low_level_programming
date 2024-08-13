@@ -12,8 +12,7 @@ void print_version(unsigned char *e_ident)
 	printf("  Version:                           %d",
 	       e_ident[EI_VERSION]);
 
-	/* Adjust the output based on whether the version is EV_CURRENT */
-	if (e_ident[EI_VERSION] == EV_CURRENT)
+	if (e_ident[EI_VERSION] == 1)
 		printf(" (current)\n");
 	else
 		printf("\n");
