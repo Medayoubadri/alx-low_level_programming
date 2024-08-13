@@ -1,4 +1,13 @@
 #include "main.h"
+#include "magic_elf.c"
+#include "class_elf.c"
+#include "data_elf.c"
+#include "check-close_elf.c"
+#include "version_elf.c"
+#include "osabi_elf.c"
+#include "abiversion_elf.c"
+#include "type_elf.c"
+#include "entry_elf.c"
 
 void read_elf_header(const char *filename, Elf64_Ehdr **header);
 void print_elf_header(Elf64_Ehdr *header);
