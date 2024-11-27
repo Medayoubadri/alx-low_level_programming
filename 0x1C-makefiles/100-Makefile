@@ -1,0 +1,30 @@
+# "Limits are just opportunities to be clever." - A Makefile Guru, probably.
+
+NAME = school
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+CC_FLAGS = -Wall -Werror -Wextra -pedantic
+HEADER = m.h
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	@$(if $(wildcard $(HEADER)),,echo "Header file $(HEADER) missing"; exit 1)
+	$(CC) $(CC_FLAGS) $(OBJ) -o $(NAME)
+
+main.o: main.c $(HEADER)
+	$(CC) $(CC_FLAGS) -c main.c -o main.o
+
+school.o: school.c $(HEADER)
+	$(CC) $(CC_FLAGS) -c school.c -o school.o
+
+clean:
+	$(RM) *~
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+	$(RM) $(NAME)
+
+re: fclean all
