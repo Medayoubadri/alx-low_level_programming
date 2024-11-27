@@ -2,28 +2,21 @@
 
 NAME = school
 SRC = main.c school.c
-OBJ = main.o school.o
-CC_COMMAND = gcc -Wall -Werror -Wextra -pedantic -c
-LINK_COMMAND = gcc -Wall -Werror -Wextra -pedantic
+OBJ = $(SRC:.c=.o)
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(LINK_COMMAND) $(OBJ) -o $(NAME)
-
-main.o: main.c m.h
-	$(CC_COMMAND) main.c -o main.o
-
-school.o: school.c m.h
-	$(CC_COMMAND) school.c -o school.o
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) *~
+	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 re: fclean all
