@@ -1,0 +1,6 @@
+# "SRC and CC walk into a bar..." - That's the whole joke.
+CC = gcc
+SRC = main.c school.c
+
+all:
+	$(CC) $(SRC) -o school
